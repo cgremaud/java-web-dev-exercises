@@ -22,8 +22,9 @@ public class AliceInWonderland {
         searchTerm = input.nextLine();
         if (alice.contains(searchTerm.toLowerCase())) {
             index = alice.indexOf(searchTerm);
-
-            System.out.println("The search term was found at index " + index + ". The search term was " + searchTerm.length() + " chars long.");
+            trimmedString = alice.replace(searchTerm, "");
+            System.out.println("The search term was found at index " + index + ". The search term was " + searchTerm.length() + " chars long." +
+                    " The new string with your search removed is: " + trimmedString);
         } else {
             System.out.println("The search term was not found.");
         }
