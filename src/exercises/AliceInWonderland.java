@@ -28,5 +28,6 @@ public class AliceInWonderland {
         } else {
             System.out.println("The search term was not found.");
         }
+        input.close();
     }
 }
