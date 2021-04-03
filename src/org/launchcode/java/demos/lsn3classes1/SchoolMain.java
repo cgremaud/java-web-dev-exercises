@@ -7,5 +7,6 @@ public class SchoolMain {
     public static void main(String[] args) {
         Student colyn = new Student("colyn", 1, 1, 4.0);
         System.out.println(colyn.getName());
+
     }
 }

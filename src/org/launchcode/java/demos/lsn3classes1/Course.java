@@ -14,5 +14,28 @@ public class Course {
         this.roster = roster;
     }
 
+    public String getCourseTitle() {
+        return this.courseTitle;
+    }
+
+    public void setCourseTitle(String aCourseTitle) {
+        this.courseTitle = aCourseTitle;
+    }
+
+    public Teacher getTeacher() {
+        return this.teacher;
+    }
+
+    public void setTeacher(Teacher aTeacher) {
+        this.teacher = aTeacher;
+    }
+
+    public HashMap<String, Student> getRoster() {
+        return this.roster;
+    }
+
+    public void setRoster(HashMap<String, Student> aRoster) {
+        this.roster = aRoster;
+    }
 
 }
