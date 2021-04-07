@@ -12,6 +12,8 @@ public class Main {
     private int aDriveStorage;
     private String aScreenType;
     private int aScreenSize;
+    Laptop laptop;
+
 
 
 
@@ -28,13 +30,16 @@ public class Main {
             aProcessor = in.nextLine();
             System.out.println("Please enter the amount of RAM in GB");
             aRam = in.nextInt();
-            System.out.println("Please enter the processor");
-            aProcessor = in.nextLine();
-
-
-
+            System.out.println("Please enter the type of drive storage (HDD or SDD)");
+            aDriveType = in.nextLine();
+            System.out.println("Please enter the amount of drive storage in GB");
+            aDriveStorage = in.nextInt();
+            System.out.println("Please enter the type of screen");
+            aScreenType = in.nextLine();
+            System.out.println("Please enter the screen size in in");
+            aScreenSize = in.nextInt();
+            laptop = new Laptop(aModel, aMake, aProcessor, aRam, aDriveType, aDriveStorage, aScreenType, aScreenSize);
+            System.out.println(laptop.printLaptopInfo());
         }
-
-
     }
 }

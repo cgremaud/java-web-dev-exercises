@@ -30,5 +30,9 @@ public class Laptop extends Computer{
         this.screenSize = screenSize;
     }
 
+    public String printLaptopInfo() {
+        return "";
+    }
+
 }
 
